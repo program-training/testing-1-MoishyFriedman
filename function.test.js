@@ -22,4 +22,12 @@ const vitest_1 = require("vitest");
         const result = (0, function_1.isSet)(array);
         (0, vitest_1.expect)(result).toEqual(arrayToCompare);
     });
+    (0, vitest_1.test)("is sqrt", () => {
+        const number1 = 4;
+        const number2 = -4;
+        const result1 = (0, function_1.sqrt)(number1);
+        const result2 = (0, function_1.sqrt)(number2);
+        (0, vitest_1.expect)(result1).toBe(2);
+        (0, vitest_1.expect)(result2).toBe("number low or equal to zero");
+    });
 });

@@ -27,6 +27,6 @@ describe("function", () => {
     const result1 = sqrt(number1);
     const result2 = sqrt(number2);
     expect(result1).toBe(2);
-    expect(result2).toBe("number low or equal to zero");
+    expect(result2).toStrictEqual(Error("number low or equal to zero"));
   });
 });
